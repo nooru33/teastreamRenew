@@ -1,0 +1,167 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Song+Myung&display=swap);
+
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#000; }
+img { border:0;}
+address, em {font-style:normal;}
+body { font:12px; color:#000; font-family: 'Nanum Gothic', sans-serif; background:#fff;} 
+
+	
+/*메뉴*/
+	#menu {z-index:100;  position:absolute; right:0; top:0; width:40%; height:100%;  background-color:rgba(0,0,0,0.3); overflow:hidden;}
+	#menu>ul {position:absolute; right:0px; top:0; width:81%; text-align:center; padding-top:130px;}
+		#menu>ul>li {float:left; font-size:40px; text-align:center; margin:0 20px; font-family: 'Marcellus SC', serif;}
+		#menu>ul>li>a {color:#fff; opacity:0.6;}
+			#sub {font-size:20px; font-family: 'Nanum Myeongjo', serif; font-weight:none; display:none;}
+				#sub li { margin:20px 0; opacity:0.6;}
+				#sub li a{color:#ddd;}
+				
+/*슬라이드 버튼*/
+		#button {position:absolute; left:2%; bottom:20px; cursor:pointer; z-index:990;}
+		#button li {float:left; margin:0 10px;}
+
+
+/*본문-section*/
+	section {position:relative; width:100%; height:700px;  background-size:cover; background-position:right center; background-attachment:fixed; z-index:990; /*outline:1px solid red; */ }
+	/*height:제이쿼리에서 페이지의 높이값을 브라우저의 높이값으로 강제지정*/
+		section article {position:relative; width:100%;}
+	
+	
+	/*section1*/
+		/*로고*/
+		#logo {z-index:100; position:absolute; left:20px; top:20px; z-index:999;}
+			#logo img {width:150px;}
+	
+		/*section1 Slide*/
+		#header {overflow:hidden;}
+			#slide {position:absolute; left:0; top:0; width:100%; height:100%; }
+			#slide li {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.5);/**/ }
+			#slide li:nth-child(1) {background:url(../images/slide_3.jpg) no-repeat center center/cover;}
+			#slide li:nth-child(2) {background:url(../images/slide_1.jpg) no-repeat center center/cover;}
+			#slide li:nth-child(3) {background:url(../images/slide_2.jpg) no-repeat center center/cover;}
+			#slide li:nth-child(4) {background:url(../images/slide_3.jpg) no-repeat center center/cover;}
+			
+		#header .content {position:absolute; left:20px; bottom:50px; color:#eee; font-size:30px; font-family: 'Nanum Myeongjo', serif; display:none;}
+			#header .content .eng {font-family: 'Cinzel', serif; color:#7aada7;}
+		
+		#slide li:nth-child(1) .content {color:#111; font-size:30px;}
+		#slide li:nth-child(1) .content p:nth-of-type(1){font-size:100px; font-family: 'Nanum Myeongjo', serif; opacity:0.6; font-weight:bold;}
+		#slide li:nth-child(1) .content p.eng {font-size:180px;font-weight:bold; color:#3e914c; opacity:0.9;}
+		
+		#slide li:nth-child(2) .content p:nth-of-type(1){font-size:100px; color:#f9e6ca; margin-bottom:-30px; font-weight:bold; opacity:0.8;}
+		#slide li:nth-child(2) .content p:nth-of-type(2){font-size:180px;   color:#fff; font-weight:bold; opacity:0.9;}
+			
+		#slide li:nth-child(3) .content {color:#222; font-size:30px;}
+		#slide li:nth-child(3) .content p:nth-of-type(1){font-size:150px; font-weight:bold; color:#1e5f8d; opacity:0.8;}
+		#slide li:nth-child(3) .content p:nth-of-type(2){font-size:110px; font-family: 'Song Myung', serif; color:rgba(0,0,0,0.9);}
+		#slide li:nth-child(3) .content span{font-size:20px; font-weight:bold;}
+			
+		#slide li:nth-child(4) .content {color:#111; font-size:30px;}
+		#slide li:nth-child(4) .content p:nth-of-type(1){font-size:100px; font-family: 'Nanum Myeongjo', serif; opacity:0.6; font-weight:bold;}
+		#slide li:nth-child(4) .content p.eng {font-size:180px;font-weight:bold; color:#3e914c; opacity:0.9;}
+			/*#hSlide .blank {position:absolute; top:0; right:0; background-color:rgba(0,0,0,0.3); width:40%; z-index:20; height:100%;}*/
+		
+		/*스크롤 아이콘*/
+		#scroll {position:absolute; width:150px; height:30px; left:50%; border:1px solid #fff; bottom:5px; z-index:1000; text-align:center;}
+			#scroll p {font-weight:bold; font-family: 'Cinzel', serif; color:#fff; line-height:30px;}
+				
+				
+/*본문*/
+
+		
+		
+		/*section1*/
+		section:nth-of-type(2) {background:#ccc;}
+		section:nth-of-type(2) article {height:50%; font-size:20px; z-index:10; }
+		
+		section:nth-of-type(2) article:nth-of-type(1) {background:#fff; width:100%;}
+		section:nth-of-type(2) article:nth-of-type(1) div {background:url(../images/logo_3b.png) no-repeat left top/25%; padding-left:300px; width:400px; margin:0 auto; position:relative; top:25%;}
+		section:nth-of-type(2) article:nth-of-type(1) div h2 {font-size:30px; background:#222; width:115px; color:#fff; margin-top:10px;}
+		section:nth-of-type(2) article:nth-of-type(1) ul li {margin:20px 0; font-family: 'Nanum Myeongjo', serif; list-style:circle; margin-left:30px;}/**/
+		
+		section:nth-of-type(2) article:nth-of-type(2) {width:100%; background:url(../images/intro_1.jpg) no-repeat 85% center/700px;}
+		section:nth-of-type(2) #box {margin-left:10%; /*padding-top:48px;*/ position:absolute; top:10%;}
+		section:nth-of-type(2) #box h2 {font-family: 'Nanum Myeongjo', serif; font-size:50px; margin-bottom:10px;}
+		section:nth-of-type(2) #box b {font-family: 'Song Myung', serif; font-size:55px;}
+		section:nth-of-type(2) #box div {margin-top:30px; }
+		section:nth-of-type(2) #box div p {font-weight:bold;}
+		
+		/*section2 상품 페이지*/
+		section:nth-of-type(3) article {background:#fff; height:100%; z-index:20; overflow:hidden; /**/}
+		
+		section:nth-of-type(3) #fram {position:relative; width:1700px; height:505px; margin:0 auto; overflow:hidden; top:50%; margin-top:-25%;}
+		section:nth-of-type(3) h2 {text-align:center; font-size:40px; padding:90px 0;}
+
+		section:nth-of-type(3) ul {position:absolute; top:0; left:0px; width:2500px; z-index:50; cursor:pointer;}
+		section:nth-of-type(3) ul li {position:relative; float:left; }
+		section:nth-of-type(3) ul li p {margin:5px 0;}
+		section:nth-of-type(3) ul li .tColor {color:#7aada7; margin-left:5px;}
+		section:nth-of-type(3) ul li img {width:300px; margin-right:50px; z-index:50; overflow:hidden;}
+		section:nth-of-type(3) ul li img:nth-of-type(7) {margin-right:0;}
+		
+		.good {position:absolute; width:300px; height:428px; left:0; top:0; background:rgba(255,255,255,0.5); display:none;/**/}
+		#fram li:hover .good{display:block;}
+		.good i {bottom:30px; position:absolute; font-size:50px; color:#fff; cursor:pointer; transition:all 0.2s;}
+		.good i:hover {color:#222;}
+		.good i.fa-heart {left:30px;}
+		.good i.fa-plus {right:30px;}
+		
+			#arrow i {position:absolute; top:45%;  font-size:70px; cursor:pointer; color:#888; transition:all 0.2s; z-index:60;}
+			#arrow i:hover {color:#222;}
+			#arrow .fa-chevron-left {left:30px;}
+			#arrow .fa-chevron-right {right:30px;}
+			
+	
+	/*section3*/
+		section:nth-of-type(4) {height:200px;}
+		section:nth-of-type(4) .bgimg {position:relative;background-attachment:fixed; background-position:center; background-repeat:no-repeat; background-size:cover; background-image:url(../images/caption_2.jpg); height:200px; }
+		section:nth-of-type(4) .caption {width:100%; height:100%; background:rgba(255,255,255,0.4); text-align:center; font-size:30px; opacity:1; color:#fff; padding-top:50px;}
+		section:nth-of-type(4) .caption p {font-size:45px; font-weight:bold; color:#467a74;}
+
+		.box2 {width:70%; height:700px; margin:30px auto; margin-bottom:100px; }
+		.box2>div {float:left;}
+		.box2>div:nth-child(1) {width:40%; height:200px!important; background:url(../images/caption.jpg) no-repeat fixed left top; background-size:cover;}
+		.box2>div:nth-child(2) {width:40%; height:130px; background:#467a74; text-align:center; font-size:24px; padding-top:70px; font-family: 'Nanum Myeongjo', serif; color:#eee;}
+		.box2>div:nth-child(3) {width:20%; height:200px;background:#eee; text-align:center; font-size:100px; line-height:200px; }
+		.box2>div:nth-child(4) {position:relative; overflow:hidden; width:25%; height:260px; background:#eee; text-align:center; font-size:45px; padding-top:140px; font-weight:bold;}
+		.box2>div:nth-child(5) {width:50%; height:400px;background:url(../images/teastream_4.jpg) no-repeat; background-size:cover;}
+		.box2>div:nth-child(6) {width:25%; height:260px;background:#222; text-align:center; font-size:24px; padding-top:140px; color:#bbb; font-family: 'Nanum Myeongjo', serif;}
+		
+		.box2>div:nth-child(7) {width:75%; height:100px; background:url(../images/001.jpg) no-repeat center center; background-size:cover; text-align:center; line-height:100px; font-size:20px; font-weight:bold;}
+		.box2>div:nth-child(8) {width:25%; height:100px;background:#222; top:-50px; text-align:center; line-height:100px;}
+		.box2>div:nth-child(8) button {width:150px; height:50px; border:1px solid #eee; cursor:pointer; background:0; color:#eee; font-size:16px; font-weight:bold;}
+		
+		.box2 .bold i {position:absolute; left:0; bottom:0;font-size:200px; color:#fff; z-index:40;}
+		.box2 .bold p {z-index:50; position:relative; margin:15px auto;}
+		
+		/*section4*/
+		section:nth-of-type(5) article{width:70%; margin:0 auto; padding-top:100px;}
+		section:nth-of-type(5) article>div {float:left; width:47%;}
+		section:nth-of-type(5) h4 {font-size:40px; font-family: 'Marcellus SC', 'Song Myung', serif; margin-bottom:20px; color:#467a74;}
+		section:nth-of-type(5) span {float:right; color:#7aada7;}
+		section:nth-of-type(5) ul a {font-weight:bold;}
+		
+		.press {margin-left:6%;}
+		.press>ul>li, .notic>ul>li {margin-top:10px;}
+
+		.noticContent, .pressContent {border-bottom:1px dashed #7aada7;}
+		.noticContent li, .pressContent li {width:100%; padding-bottom:10px; padding-top:10px; color:#666;}
+		
+/*footer*/
+	#footer {position:relative; padding-top:20px; width:100%; height:400px; background:#ccc;}
+		#upper {position:relative; left:0; top:0; width:70%; height:200px; margin:0 auto;}
+		#upper>div {float:left; }
+		#left, #right {width:45%;}
+		#right div {margin-bottom:20px; margin-left:10%}
+	
+		div.small {clear:both; padding-top:15px; margin-top:15px; border-top:1px solid #eee; width:70%; margin:0 auto;}
+		div.small div {float:left; width:33%;}
+		div.small div:nth-child(2) {text-align:center; margin-left:1%;}
+		.bold {font-weight:bold;}
+		#sns {}
+		#sns ul{float:right;}
+		#sns li {float:left; margin:10px;}
+		#sns li img {width:30px; opacity:0.4;}
+		
